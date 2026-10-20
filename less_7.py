@@ -1,0 +1,15 @@
+import torch
+print("version = ", torch.__version__)
+
+a = torch.tensor([1, 2, 3, 10, 20, 30])
+print(a, a.sum().item(), a.float().mean(), a.min())
+a = a.view(3, 2)
+print(a.sum(dim=1), a.sum(dim=0), a.amax(dim=1))
+a = torch.tensor([-1, 1, 5, -44, 32, 2])
+print(a.abs(), a.amax(), a.float().log().round())
+a = torch.linspace(0, torch.pi, 9)
+print(torch.sin(a))
+x = torch.rand(10)
+y = torch.rand(10)
+xy = torch.vstack([x,y])
+print(x.median(), y.median(), xy.corrcoef(), xy.cov())
