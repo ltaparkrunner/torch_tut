@@ -41,7 +41,7 @@ train_data = data.DataLoader(d_train, batch_size=32, shuffle=True)
 train_data_val = data.DataLoader(d_val, batch_size=32, shuffle=False)
 
 
-optimizer = optim.Adam(params=model.parameters(), lr=0.01)
+optimizer = optim.Adam(params=model.parameters(), lr=0.01, weight_decay=0.001)
 loss_function = nn.CrossEntropyLoss()
 epochs = 20
 
