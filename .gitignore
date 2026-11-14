@@ -219,5 +219,10 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# my addition
+# my append
 dataset/
+dataset_gen_reg.zip
+dataset_reg/
+images/
+model_sun_2.tar
+
