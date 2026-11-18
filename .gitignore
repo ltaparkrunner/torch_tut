@@ -232,3 +232,4 @@ model_transfer_resnet.tar
 *.jpeg
 *.tar
 dataset_seg/
+texts/
